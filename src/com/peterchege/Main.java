@@ -17,7 +17,7 @@ public class Main {
 
         var employee = new Employee();
         employee.setBaseSalary(30000);
-        employee.hourlyRate = 20;
+        employee.setHourlyRate(20);
         employee.getBaseSalary();
 
 
