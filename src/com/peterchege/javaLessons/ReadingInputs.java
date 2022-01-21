@@ -1,4 +1,4 @@
-package com.peterchege;
+package com.peterchege.javaLessons;
 
 import java.util.Scanner;
 

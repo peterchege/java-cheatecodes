@@ -1,4 +1,4 @@
-package com.peterchege;
+package com.peterchege.javaLessons;
 
 public class ForEach {
     public static void main(String[] args) {
