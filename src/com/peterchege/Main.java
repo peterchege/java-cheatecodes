@@ -16,8 +16,10 @@ public class Main {
         System.out.println(textbox2.text.toUpperCase(Locale.ROOT));
 
         var employee = new Employee();
-        employee.baseSalary = 50_000;
+        employee.setBaseSalary(30000);
         employee.hourlyRate = 20;
+        employee.getBaseSalary();
+
 
         int wages = employee.calculateWage(34);
         System.out.println(wages);
