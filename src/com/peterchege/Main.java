@@ -1,33 +1,30 @@
 package com.peterchege;
 
-import java.awt.*;
-import java.util.Date;
+import com.peterchege.ooplessons.Browser;
+import com.peterchege.ooplessons.Employee;
+import com.peterchege.ooplessons.TextBox;
+
+import java.util.Locale;
 
 public class Main {
-
     public static void main(String[] args) {
-        byte age = 30;
-        Date now = new Date();
-        now.getTime();
-        Point point1 = new Point (1,2);
-        Point point2 = point1;
-        point1.x = 5;
-        String message = "  Hello Peter \"Chege\"   ";
-        System.out.println(message.startsWith("Hello"));
-        System.out.println(message.endsWith("Chege"));
-        System.out.println(message.length());
-        System.out.println(message.indexOf("C"));
-        System.out.println(message.trim());
-        System.out.println(message.replace("Chege","Kinuthia").trim());
-        System.out.println(message);
+        var textbox1 = new TextBox();
+        textbox1.setText("Peter chege");
+        System.out.println(textbox1.text.toUpperCase(Locale.ROOT));
 
-        String path = "c:\\windows\\user\\peterchege\\..";
-        String newPath = "c:\t\\windows\\user\\peterchege\\..";
-        System.out.println(path);
-        System.out.println(newPath);
+        var textbox2 = new TextBox();
+        textbox2.setText("Phylis Muthoni");
+        System.out.println(textbox2.text.toUpperCase(Locale.ROOT));
 
-        String header = "My name is : \n peter chege kinuthia";
-        System.out.println(header);
+
+        var employee = new Employee(50_000,20);
+        int wages = employee.calculateWage(34);
+//        System.out.println(Employee.numberOfEmployees);
+        Employee.printNumberOfEmployees();
+        System.out.println(wages);
+
+        var browser = new Browser();
+        browser.navigator("http://127.3.234");
 
     }
 }
