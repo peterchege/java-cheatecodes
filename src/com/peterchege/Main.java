@@ -16,12 +16,7 @@ public class Main {
         textbox2.setText("Phylis Muthoni");
         System.out.println(textbox2.text.toUpperCase(Locale.ROOT));
 
-        var employee = new Employee();
-        employee.setBaseSalary(30000);
-        employee.setHourlyRate(20);
-        employee.getBaseSalary();
-
-
+        var employee = new Employee(50_000,20);
         int wages = employee.calculateWage(34);
         System.out.println(wages);
 
