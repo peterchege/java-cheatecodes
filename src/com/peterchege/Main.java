@@ -1,5 +1,6 @@
 package com.peterchege;
 
+import com.peterchege.ooplessons.Browser;
 import com.peterchege.ooplessons.Employee;
 import com.peterchege.ooplessons.TextBox;
 
@@ -23,6 +24,9 @@ public class Main {
 
         int wages = employee.calculateWage(34);
         System.out.println(wages);
+
+        var browser = new Browser();
+        browser.navigator("http://127.3.234");
 
     }
 }
