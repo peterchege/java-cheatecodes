@@ -21,13 +21,15 @@ public class Main {
 //        textBox.setText("peter chege");
 //        System.out.println(textBox);
 
-        var control = new UIControl(true);
-        var textBox = new TextBox();
-        show(textBox);
+//        var control = new UIControl(true);
+//        var textBox = new TextBox();
+//        show(textBox);
 
-//        var point1 = new Point(1,2);
-//        var point2 = new Point(1,2);
-//        System.out.println(point1 == point2);
+        var point1 = new Point(1,2);
+        var point2 = new Point(1,2);
+//        System.out.println(point1.equals(point2) );
+        System.out.println(point1.hashCode() );
+        System.out.println(point2.hashCode() );
     }
 
     private static void show(UIControl control) {
