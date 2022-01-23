@@ -13,9 +13,11 @@ public class Main {
 //        report.printMortgage();
 //        report.printPaymentSchedule();
 
-        var control = new UIControl();
-        control.disabled();
-        System.out.println(control.isEnabled());
+//        var control = new TextBox();
+//        control.disabled();
+//        System.out.println(control.isEnabled());
+
+        var textBox = new TextBox();
     }
 
 }

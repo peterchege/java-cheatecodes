@@ -1,11 +1,12 @@
 package com.peterchege.ooplessons;
 
-public class TextBox {
-    public String getText;
+public class TextBox extends UIControl {
     private String text;
 
     public TextBox() {
+        super(true);
         text = "";
+        System.out.println("TextBox");
     }
 
     public void setText(String text){
