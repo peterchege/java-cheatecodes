@@ -3,10 +3,16 @@ package com.peterchege.ooplessons;
 public class TextBox extends UIControl {
     private String text;
 
-    public TextBox() {
-        super(true);
-        text = "";
+//    public TextBox() {
+//        super(true);
+//        text = "";
 //        System.out.println("TextBox");
+//    }
+
+
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
     }
 
     @Override

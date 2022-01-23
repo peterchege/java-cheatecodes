@@ -1,12 +1,14 @@
 package com.peterchege.ooplessons;
 
-public class UIControl {
+public abstract class UIControl {
     private boolean isEnabled = true;
 
-    public UIControl(boolean isEnabled) {
-        this.isEnabled = isEnabled;
+//    public UIControl(boolean isEnabled) {
+//        this.isEnabled = isEnabled;
 //        System.out.println("UIControl");
-    }
+//    }
+
+    public abstract  void render();
 
     public void enabled(){
         isEnabled= true;
