@@ -17,9 +17,20 @@ public class Main {
 //        control.disabled();
 //        System.out.println(control.isEnabled());
 
+//        var textBox = new TextBox();
+//        textBox.setText("peter chege");
+//        System.out.println(textBox);
+
+        var control = new UIControl(true);
         var textBox = new TextBox();
-        textBox.setText("peter chege");
-        System.out.println(textBox);
+        show(textBox);
     }
+
+    private static void show(UIControl control) {
+        var textBox = (TextBox)control;
+        textBox.setText("Hello world");
+        System.out.println(control);
+    }
+
 
 }
