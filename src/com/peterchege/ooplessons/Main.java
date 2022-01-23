@@ -24,11 +24,18 @@ public class Main {
         var control = new UIControl(true);
         var textBox = new TextBox();
         show(textBox);
+
+//        var point1 = new Point(1,2);
+//        var point2 = new Point(1,2);
+//        System.out.println(point1 == point2);
     }
 
     private static void show(UIControl control) {
-        var textBox = (TextBox)control;
-        textBox.setText("Hello world");
+        if( control instanceof TextBox){
+            var textBox = (TextBox)control;
+            textBox.setText("Hello world");
+        }
+
         System.out.println(control);
     }
 
