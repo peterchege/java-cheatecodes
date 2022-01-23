@@ -18,6 +18,8 @@ public class Main {
 //        System.out.println(control.isEnabled());
 
         var textBox = new TextBox();
+        textBox.setText("peter chege");
+        System.out.println(textBox);
     }
 
 }
